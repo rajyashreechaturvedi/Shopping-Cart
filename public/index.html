@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+<script src="jquery.js"></script>
+<script src="shopping.js"></script>
+</head>
+<body>
+  <h1>Shopping Cart</h1>
+    <button onclick="window.location.href='/vendors.html'">Add Vendors</button>
+    <button onclick="window.location.href='/products.html'">Add Products</button>
+    <button id="goto_cart" onclick="window.location.href='/cart.html'" style="display: none">My Cart</button>
+    <br><br>
+    <h5>Enter any name to shop and view cart !!</h5><br>
+    <form id="form1">
+        Username: <input id="name" placeholder="User Name">
+        <button id="checkUser">Login</button>
+        <br>
+    </form>
+    <form id="form2" >
+        <label id="msg" value = ""></label>
+        <button id="logout">Logout</button>
+        <br>
+    </form>
+    <hr>
+    <table style="width:100%" id="products"></table>
+</body>
+</html>

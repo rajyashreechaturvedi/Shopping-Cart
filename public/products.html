@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery.js"></script>
+    <script src="products.js"></script>
+</head>
+
+<body>
+  <h1>Add Products</h1>
+  <button onclick="window.location.href='/index.html'">Home</button>
+  <button onclick="window.location.href='/vendors.html'">Add Vendors</button><br><br>
+  <form>
+      Product name: <input id="name" name="name" placeholder="Product name" type="text"><br><br>
+      Price: <input id="price" name="price" placeholder="Price" type="number"><br><br>
+      Vendor: <select id="vendorOptions" name="vendor" aria-placeholder="please selecr vendor"></select><br><br>
+      Quantity: <input id="qty" name="qty" placeholder="Quantity"><br><br>
+      <button type="submit" id="addProduct">Add</button>
+  </form><hr>
+  <table style="width:100%" id="productList"></table>
+</body>
+</html>
